@@ -1,0 +1,136 @@
+:root {
+    --colour1: black;
+    --colour2: blue;
+    --colour3: #333;
+    --colour4: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%
+}
+
+.logo {
+    height: 195;
+    width: 291;
+    padding-left: 32px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menubanner {
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 0;
+    background-color: var(--colour3);
+    overflow: hidden;
+    justify-content: space-evenly;
+    max-height: 25%;
+}
+
+.logoname {
+    color: var(--colour4);
+    width: 250px;
+    margin: 8px;
+}
+
+.maintext {
+    padding: 16px;
+    min-height: calc(100vh - 288px);
+    font-size: 20px;
+}
+
+.video {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+@media only screen and (min-width: 1200px) {
+    .menuoptions {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .menuoptions {
+        width: 40%;
+    }
+}
+
+.menuoptions {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+    float: right;
+    padding-right: 16px;
+    margin-right: 16px;
+}
+
+.menuoptions a:last-child {
+    display: none;
+}
+
+.navbutton {
+    color: var(--colour4);
+}
+
+.footer {
+    background-color: var(--colour3);
+    color: var(--colour4);
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.iconlinks {
+    max-width: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 32px;
+    column-gap: 16px;
+}
+
+.copyright {
+    margin-left: 16px;
+}
+
+.mobilenav {
+    display: none;
+    background-color: var(--colour3);
+}
+
+.mobilenav.responsive {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    justify-content: space-between;
+    min-height: 240px;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 900px) {
+    .menuoptions a:not(:last-child) {
+        display: none;
+    }
+
+    .menuoptions a.icon {
+        color: var(--colour4);
+        display: block;
+        float: right;
+        position: relative;
+        left: 20vw;
+        font-size: 32px;
+    }
+}
